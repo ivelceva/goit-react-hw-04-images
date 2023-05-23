@@ -5,7 +5,7 @@ import css from './Modal.module.css';
 const Modal = ({ onModalClose, largeImageURL }) => {
   useEffect(() => {
     const handleKeyDown = e => {
-      if (e.keyCode === 27 || e.currentTarget === e.target) {
+      if (e.keyCode === 27) {
         onModalClose();
       }
     };
